@@ -1,0 +1,81 @@
+/* src/styles/global.css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-start: #ff76b8;
+  --bg-mid: #9b6bff;
+  --bg-end: #2ac2ff;
+  --panel-bg: rgba(6, 29, 54, 0.95);
+  --panel-inner: rgba(8, 36, 66, 0.98);
+  --accent: #ff8fd1;
+  --accent-strong: #ff4d4d;
+  --text-main: #ffffff;
+  --text-muted: #a9b5d1;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: var(--text-main);
+  background: radial-gradient(circle at top left, var(--bg-start), #6b3cff 40%),
+    radial-gradient(circle at bottom right, #3f82ff, var(--bg-end));
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+  padding: 32px 24px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-shell {
+  display: flex;
+  justify-content: center;
+}
+
+.panel {
+  width: 100%;
+  max-width: 900px;
+  background: linear-gradient(145deg, var(--panel-bg), var(--panel-inner));
+  border-radius: 28px;
+  padding: 28px 32px 32px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Shared panel header */
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.panel-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.panel-subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}

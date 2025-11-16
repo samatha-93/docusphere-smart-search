@@ -1,0 +1,65 @@
+/* src/styles/DocumentCard.css */
+.doc-card {
+  background: radial-gradient(circle at top left, #143861, #071526);
+  border-radius: 18px;
+  padding: 14px 18px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.doc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.doc-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.doc-category {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(111, 212, 255, 0.14);
+  color: #7de3ff;
+}
+
+.doc-description {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.doc-actions {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.doc-link {
+  font-size: 0.85rem;
+  color: #6df3ff;
+  text-decoration: underline;
+}
+
+.doc-delete {
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 14px;
+  background: var(--accent-strong);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.doc-delete:hover {
+  background: #ff6c6c;
+}
